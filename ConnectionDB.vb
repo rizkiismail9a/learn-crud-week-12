@@ -13,7 +13,7 @@ Module ConnectionDB
         Try
             If Conn.State = ConnectionState.Closed Then
                 Conn.Open()
-                MsgBox("Koneksi Berhasil")
+                'MsgBox("Koneksi Berhasil")
             End If
         Catch ex As Exception
             MsgBox("Koneksi Gagal")

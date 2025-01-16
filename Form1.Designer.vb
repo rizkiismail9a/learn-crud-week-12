@@ -28,6 +28,15 @@ Partial Class Form1
         Label4 = New Label()
         InputNIM = New TextBox()
         InputName = New TextBox()
+        InputAddress = New TextBox()
+        InputPhone = New TextBox()
+        TableStudents = New DataGridView()
+        AddButton = New Button()
+        EditButton = New Button()
+        DeleteButton = New Button()
+        CloseButton = New Button()
+        Label6 = New Label()
+        CType(TableStudents, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -80,11 +89,87 @@ Partial Class Form1
         InputName.Size = New Size(577, 39)
         InputName.TabIndex = 5
         ' 
+        ' InputAddress
+        ' 
+        InputAddress.Location = New Point(233, 169)
+        InputAddress.Name = "InputAddress"
+        InputAddress.Size = New Size(577, 39)
+        InputAddress.TabIndex = 6
+        ' 
+        ' InputPhone
+        ' 
+        InputPhone.Location = New Point(233, 245)
+        InputPhone.Name = "InputPhone"
+        InputPhone.Size = New Size(577, 39)
+        InputPhone.TabIndex = 7
+        ' 
+        ' TableStudents
+        ' 
+        TableStudents.AllowUserToDeleteRows = False
+        TableStudents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        TableStudents.Location = New Point(47, 460)
+        TableStudents.Name = "TableStudents"
+        TableStudents.RowHeadersWidth = 82
+        TableStudents.Size = New Size(977, 300)
+        TableStudents.TabIndex = 8
+        ' 
+        ' AddButton
+        ' 
+        AddButton.Location = New Point(45, 372)
+        AddButton.Name = "AddButton"
+        AddButton.Size = New Size(222, 46)
+        AddButton.TabIndex = 9
+        AddButton.Text = "Tambah"
+        AddButton.UseVisualStyleBackColor = True
+        ' 
+        ' EditButton
+        ' 
+        EditButton.Location = New Point(291, 372)
+        EditButton.Name = "EditButton"
+        EditButton.Size = New Size(222, 46)
+        EditButton.TabIndex = 10
+        EditButton.Text = "Edit"
+        EditButton.UseVisualStyleBackColor = True
+        ' 
+        ' DeleteButton
+        ' 
+        DeleteButton.Location = New Point(541, 372)
+        DeleteButton.Name = "DeleteButton"
+        DeleteButton.Size = New Size(222, 46)
+        DeleteButton.TabIndex = 11
+        DeleteButton.Text = "Hapus"
+        DeleteButton.UseVisualStyleBackColor = True
+        ' 
+        ' CloseButton
+        ' 
+        CloseButton.Location = New Point(802, 372)
+        CloseButton.Name = "CloseButton"
+        CloseButton.Size = New Size(222, 46)
+        CloseButton.TabIndex = 12
+        CloseButton.Text = "Keluar"
+        CloseButton.UseVisualStyleBackColor = True
+        ' 
+        ' Label6
+        ' 
+        Label6.Location = New Point(833, 36)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(233, 107)
+        Label6.TabIndex = 14
+        Label6.Text = "tekan enter pada NIM untuk edit atau hapus data"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(977, 510)
+        ClientSize = New Size(1078, 772)
+        Controls.Add(Label6)
+        Controls.Add(CloseButton)
+        Controls.Add(DeleteButton)
+        Controls.Add(EditButton)
+        Controls.Add(AddButton)
+        Controls.Add(TableStudents)
+        Controls.Add(InputPhone)
+        Controls.Add(InputAddress)
         Controls.Add(InputName)
         Controls.Add(InputNIM)
         Controls.Add(Label4)
@@ -93,6 +178,7 @@ Partial Class Form1
         Controls.Add(Label1)
         Name = "Form1"
         Text = "Form1"
+        CType(TableStudents, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -103,5 +189,13 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents InputNIM As TextBox
     Friend WithEvents InputName As TextBox
+    Friend WithEvents InputAddress As TextBox
+    Friend WithEvents InputPhone As TextBox
+    Friend WithEvents TableStudents As DataGridView
+    Friend WithEvents AddButton As Button
+    Friend WithEvents EditButton As Button
+    Friend WithEvents DeleteButton As Button
+    Friend WithEvents CloseButton As Button
+    Friend WithEvents Label6 As Label
 
 End Class
