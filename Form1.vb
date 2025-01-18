@@ -4,7 +4,7 @@ Public Class Form1
 
     Private Sub ViewData()
         Connect()
-        Da = New OdbcDataAdapter("Select * from mahasiswa", Conn) 'Ambil data dari database
+        Da = New OdbcDataAdapter("Select * from mahasiswa", Conn) 'Ambil data dari database, ubah query untuk mengambil sebagian data
         Ds = New DataSet() 'Buat object dataset
         Ds.Clear() 'Bersihkan dataset
         Da.Fill(Ds, "mahasiswa") 'Apa yang mau di-fill? Ds, pake apa? "mahasiswa"
